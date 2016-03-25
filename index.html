@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link href="img/favicon.png" rel="icon" type="image/png">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/custom-portfolio.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet" type="text/css">
 
     <!-- Google Analytics code -->
     <script>
@@ -30,62 +30,158 @@
     <nav id="sidebar-wrapper">
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand"><a href="#top"  onclick = $("#menu-close").click(); >Mason Sun</a></li>
-            <li><a href="#top" onclick = $("#menu-close").click(); >Home</a></li>
-            <li><a href="#about" onclick = $("#menu-close").click(); >About</a></li>
-            <li><a href="#knowledge" onclick = $("#menu-close").click(); >Knowledge</a></li>
+            <li class="sidebar-brand"><a href="#top" onclick=$("#menu-close").click();>Mason Sun</a></li>
+            <li><a href="#about" onclick=$("#menu-close").click();>About</a></li>
+            <li><a href="#exp" onclick=$("#menu-close").click();>Experience</a></li>
+            <li><a href="#misc" onclick=$("#menu-close").click();>Miscellany</a></li>
         </ul>
     </nav>
 
     <!-- Header -->
     <header id="top" class="header">
-        <div class="text-vertical-center shift-up">
-            <h1>Mason Sun</h1>
-            <hr class="small">
-            <ul class="list-inline">
-                <li><a title="Facebook" class="icon" href="http://www.fb.co/mason.sun" target="_blank"><i class="fa fa-facebook-square fa-3x"></i></a></li>
-                <li><a title="Linkedin" class="icon" href="https://www.linkedin.com/in/masonsun" target="_blank"><i class="fa fa-linkedin-square fa-3x"></i></a></li>
-                <li><a title="Github" class="icon" href="http://www.github.com/masonsun" target="_blank"><i class="fa fa-github-alt fa-3x"></i></a></li>
-                <li><a title="Google+" class="icon" href="https://plus.google.com/113025314755657316643" target="_blank"><i class="fa fa-google-plus-square fa-3x"></i></a></li>
-                <li><a title="Soundcloud" class="icon" href="http://www.soundcloud.com/masonsun" target="_blank"><i class="fa fa-soundcloud fa-3x"></i></a></li>
-                <li><a title="Email" class="icon" href="mailto:zheng.sun2@mail.mcgill.ca" target="_blank"><i class="fa fa-envelope fa-3x"></i></a></li> 
-            </ul>
-            <br>
-            <a title="Keep Explorin'" href="#about"><i id="down" class="fa fa-angle-double-down fa-4x"></i></a>
+        <div class="text-vertical-center">
+            <div class="animated pulse hidden">
+                <div class="text-box">
+                    <h1>mason sun</h1>
+                    <hr class="small">
+                    <ul class="list-inline">
+                        <li><a title="Facebook" data-toggle="tooltip" data-placement="bottom" class="icon" href="http://www.fb.co/mason.sun" target="_blank"><i class="fa fa-facebook-square fa-3x"></i></a></li>
+                        <li><a title="Twitter" data-toggle="tooltip" data-placement="bottom" class="icon" href="http://www.twitter.com/masonzsun" target="_blank"><i class="fa fa-twitter fa-3x"></i></a></li>
+                        <li><a title="Linkedin" data-toggle="tooltip" data-placement="bottom" class="icon" href="https://www.linkedin.com/in/masonsun" target="_blank"><i class="fa fa-linkedin fa-3x"></i></a></li>
+                        <li><a title="Github" data-toggle="tooltip" data-placement="bottom" class="icon" href="http://www.github.com/masonsun" target="_blank"><i class="fa fa-github fa-3x"></i></a></li>
+                        <li><a title="Google+" data-toggle="tooltip" data-placement="bottom" class="icon" href="https://plus.google.com/113025314755657316643" target="_blank"><i class="fa fa-google-plus-square fa-3x"></i></a></li>
+                        <li><a title="Soundcloud" data-toggle="tooltip" data-placement="bottom" class="icon" href="http://www.soundcloud.com/masonsun" target="_blank"><i class="fa fa-soundcloud fa-3x"></i></a></li>
+                        <li><a title="Email" data-toggle="tooltip" data-placement="bottom" class="icon" href="mailto:masonzsun@gmail.com" target="_blank"><i class="fa fa-envelope fa-3x"></i></a></li> 
+                    </ul>
+                    <a title="Keep Explorin'" class="icon" href="#about"><i class="fa fa-angle-double-down fa-4x padded"></i></a>
+                </div>
+            </div>
         </div>
     </header>
 
     <!-- About -->
-    <section id="about" class="about">
+    <section id="about" class="sect">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <h1>About Me</h1>
+                <div class="col-md-12">
+                    <h1 class="reveal" data-animation="bounceInDown">About Me</h1>
+                </div>
+                <div class="col-md-8 reveal" data-animation="slideInLeft">
                     <p class="lead">
-                        Hi there! I'm Mason. I was born in <a href="https://en.wikipedia.org/wiki/Richmond,_British_Columbia" target="_blank"> Richmond</a>, which is known for its rainy weather, occasional media cameos, Asian community, and <a href="https://www.facebook.com/#/RichmondLearnstoPark" target="_blank">parking etiquette</a> (disclaimer: no causation). My parents are from Taiwan, but I lived in Vancouver, Taipei, Istanbul, and Eastern Europe, each for four or more years, growing up. I guess home is more of a concept than a physical entity.
-                        <br><br>
-                        I graduated in May 2015 with my bachelor's degrees in computer science and biology from <a href="http://www.cs.mcgill.ca/" target="_blank">McGill University</a>, where I studied the features of the human-virus interactome under the supervision of <a href="http://bioinfo.lab.mcgill.ca/index.html" target="_blank">Brandon Xia</a>. I have also been involved in research pertaining to microbiology, biomedical engineering, and fluid dynamics at McGill, and cognitive science and functional genomics at the <a href="http://www.hku.hk" target="_blank">University of Hong Kong</a> and <a href="https://www.sinica.edu.tw/main_e.shtml" target="blank">Academia Sinica</a> respectively. I've recently worked at <a href="http://www.kpmg.com/tw/en/pages/default.aspx" target="blank">KPMG</a> as a data science intern. 
-                        <br><br>
-                        I'm interested in the intersections of media, health, and technology, particuarly using quantitative methods to leverage better decisions and transforming data into actionable insights. I maintain an inventory of things I enjoy reading, sharing, or learning that I call "<a href="#knowledge">In the Pursuit of Knowledge</a>." Please consider this knowledge in the loosest of definitions. Feel free to check it out.
+                        Hi there! I'm Mason. I was born in <a href="https://en.wikipedia.org/wiki/Richmond,_British_Columbia" target="_blank">Richmond</a>, which is known for its rainy weather, occasional media cameos, Asian community, and <a href="https://www.facebook.com/#/RichmondLearnstoPark" target="_blank">parking etiquette</a> (disclaimer: no causation, probably). My parents are from Taiwan, but I lived in Vancouver, Taipei, Istanbul, and Eastern Europe, each for four or more years, growing up. I guess home is more of a concept than a physical entity.<br><br>
+
+                        I'm interested in the intersections of media, health, and technology, particuarly using quantitative methods to formulate better decisions and transforming data into actionable insights. I have also developed an interest in human-computer interaction recently, mainly to leverage design principles to deliver information in a more accessible and user-friendly manner.<br><br>
+
+                        I graduated in May 2015 with my bachelor's degrees in computer science and biology from <a href="http://www.cs.mcgill.ca/" target="_blank">McGill University</a>.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="exp" class="callout">
+        <div class="text-vertical-center">
+            <div class="text-box">
+                <h2>Experience</h2>
+            </div>
+        </div>
+    </section>
+    <section class="sect">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 reveal" data-animation="fadeInLeft">
+                    <img class="img-circular enlarge" src="img/kpmg.png">
+                    <p class="lead caption">
+                        I was a data science intern on the Data and Analytics Team. I helped develop a financial analytics platform responsible for customer experience management.
+                    </p>
+                </div>
+                <div class="col-md-4 reveal" data-animation="fadeInDown">
+                    <img class="img-circular enlarge" src="img/mcgill.png">
+                    <p class="lead caption">
+                        I was a research assistant at McGill University, where I studied the features of the human-virus interactome under the supervision of <a href="http://bioinfo.lab.mcgill.ca/index.html" target="_blank">Brandon Xia</a>. You can read the paper <a href="https://www.dropbox.com/s/5aprka0v12dr6iw/msun_interactome.pdf?dl=0" target="_blank">here</a>. I have also been involved in other research efforts related to microbiology, biomedical engineering, and fluid dynamics.
+                    </p>
+                </div>
+                <div class="col-md-4 reveal" data-animation="fadeInRight">
+                    <img class="img-circular enlarge" src="img/hku.png">
+                    <p class="lead caption">
+                        I was a research intern at the University of Hong Kong, conducting computational experiments to determine how humans organize and process information.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Knowledge -->
-    <aside id="knowledge" class="callout knowledge">
+    <!-- Miscellaneous -->
+    <section id="misc" class="callout">
         <div class="text-vertical-center">
-            <div class="text-box"><h2>In the Pursuit of Knowledge</h2></div>
+            <div class="text-box">
+                <h2>And some other things...</h2>
+            </div>
         </div>
-    </aside>
-    <section class="about">
+    </section>
+    <section class="sect">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <p class="lead">
-                        To be completed...<br><br>
+                <div class="col-md-4 reveal" data-animation="fadeInDown">
+                    <i class="fa fa-paper-plane-o fa-fw fa-3x"></i>
+                    <p class="lead caption">
+                        I am caught in the perpetual battle between indulging in food and staying fit. I enjoy watching and playing basketball, and sifting through data curated by the NBA. I also have a penchant for anime and manga. I used to be a Pokemon trainer until I was told to grow up.
                     </p>
+                </div>
+                <div class="col-md-4 reveal" data-animation="fadeInDown">
+                    <i class="fa fa-pencil fa-fw fa-3x"></i>
+                    <p class="lead caption">
+                        I write on <a href="https://quora.com/mason-sun-1" target="_blank">Quora</a> in my free time, usually about computational biology, the politics and culture of Taiwan, and post-secondary education in Canada.
+                    </p>
+                </div>
+                <div class="col-md-4 reveal" data-animation="fadeInDown">
+                    <i class="fa fa-bar-chart fa-fw fa-3x"></i>
+                    <p class="lead caption">
+                        I would like to start doing some analyses or competitions on <a href="https://kaggle.com/masonsun" target="_blank">Kaggle</a>, but haven't quite gotten around to it. Still a newbie so if you have any pointers, I'm all ears.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 reveal" data-animation="fadeInDown">
+                    <i class="fa fa-music fa-fw fa-3x"></i>
+                    <p class="lead caption">
+                        I enjoy rock and blues music, and Mandopop on occassion.
+                    </p>
+                </div>                
+                <div class="col-md-4 reveal" data-animation="fadeInDown">
+                    <i class="fa fa-lightbulb-o fa-fw fa-3x"></i>
+                    <p class="lead caption">
+                        Sometimes I try to channel my inspirations into something tangible. Calling it a portfolio would be a stretch, but you can take a look <a data-toggle="tooltip" data-placement="bottom" title="To be updated...">here</a>.
+                    </p>
+                </div>
+                <div class="col-md-4 reveal" data-animation="fadeInDown">
+                    <i class="fa fa-thumb-tack fa-fw fa-3x"></i>
+                    <p class="lead caption">
+                        I maintain an inventory of things I enjoy reading, sharing, or learning that I call "<a data-toggle="collapse" data-target="#know" aria-expanded="false" aria-controls="know">In the Pursuit of Knowledge</a>." Please consider this knowledge in the loosest of definitions. Feel free to check it out.
+                    </p>
+                </div>
+            </div>
+            <div class="collapse" id="know">
+                <div class="well">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a class="readlist">The Everything Store</a>
+                            <p class="lead">
+                                The emergence of Amazon and the many challenges it weathered throughout the years, this book talks about Jeff Bezos and his relentless effort to change the landscape of the retail industry. Did you know <a href="https://www.amazon.com">www.relentless.com</a> redirects to Amazon?
+                            </p>
+                            <a class="readlist">Why I Left Goldman Sachs</a>
+                            <p class="lead">
+                                A compelling narrative detailing the culture and daily life at Goldman Sachs, be it good or bad. It offers some insights to the more furtive side of investment banking.
+                            </p>
+                            <a class="readlist">Futurama</a>
+                            <p class="lead">
+                                An animated sci-fi sitcom that takes place in the retro-futuristic 31st century. There are tons of subtle math references and science jokes if you have a keen eye.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -95,19 +191,16 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
+                <div class="col-md-10 col-md-offset-1 text-center">
                     <hr class="small">
-                    <p class="text-muted">Copyright &copy; Mason Sun 2015</p>
+                    <p class="text-muted">Copyright &copy; Mason Sun 2016</p>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-    <!-- Bootstrap Core JavaScript -->
+    <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <!-- Custom Theme JavaScript -->
-    <script src="js/custom.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
