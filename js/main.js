@@ -3,10 +3,13 @@ $(document).ready(function () {
     $("div.hidden").fadeIn(1500).removeClass("hidden");
 });
 
-// Initialize tooltip
+// Initializes tooltip
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
+
+// Places tooltip
+$(".icon").tooltip({placement:"bottom", delay:100});
 
 // Closes the sidebar menu
 $("#menu-close").click(function(e) {
